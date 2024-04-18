@@ -30,5 +30,13 @@ android {
 
 dependencies {
     implementation 'com.facebook.react:react-native:+'
-    api 'org.jitsi:webrtc:118.+'
+    api 'com.millicast:webrtc:118.0.0'
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        mavenLocal()
+    }
 }

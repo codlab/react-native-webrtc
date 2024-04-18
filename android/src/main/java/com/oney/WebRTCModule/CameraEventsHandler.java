@@ -41,6 +41,11 @@ class CameraEventsHandler implements CameraVideoCapturer.CameraEventsHandler {
         Log.d(TAG, "CameraEventsHandler.onCameraOpening: cameraName=" + cameraName);
     }
 
+    @Override
+    public void onCameraOpened() {
+        // @millicast: nothing yet
+    }
+
     // Callback invoked when first camera frame is available after camera is opened.
     @Override
     public void onFirstFrameAvailable() {
